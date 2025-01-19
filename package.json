@@ -10,6 +10,7 @@
     "@triton-one/yellowstone-grpc": "^1.2.0",
     "@types/jsonfile": "^6.1.4",
     "@types/node-cron": "^3.0.11",
+    "axios": "^1.7.9",
     "bs58": "^5.0.0",
     "decimal.js": "^10.4.3",
     "jsonfile": "^6.1.0",
@@ -19,7 +20,8 @@
   },
   "devDependencies": {
     "@types/bn.js": "^5.1.5",
-    "npm-check-updates": "^16.14.11"
+    "npm-check-updates": "^16.14.11",
+    "tsx": "^4.19.2"
   },
   "scripts": {
     "start": "node",
