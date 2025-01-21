@@ -9,10 +9,11 @@ export const createPool = async () => {
   const raydium = await initSdk({ loadToken: true })
 
   // you can call sdk api to get mint info or paste mint info from api: https://api-v3.raydium.io/mint/list
-  // RAY
-  const mint1 = await raydium.token.getTokenInfo('4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R')
-  // USDT
-  const mint2 = await raydium.token.getTokenInfo('Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB')
+  const mint1 = await raydium.token.getTokenInfo('4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R') // RAY
+  const mint2 = await raydium.token.getTokenInfo('Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB') // USDT
+  
+  // const mint1 = await raydium.token.getTokenInfo('Gh9ZwEmdLJ8DscKNTkTqPbNwLNNBjuSzaG9Vp2KGtKJr') // dummy (devnet)
+  // const mint2 = await raydium.token.getTokenInfo('4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU') // usdc (devnet)
   const clmmConfigs = await raydium.api.getClmmConfigs()
   // const clmmConfigs = devConfigs // devnet configs
 
